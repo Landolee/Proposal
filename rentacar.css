@@ -1,0 +1,107 @@
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header{grid-area: header}
+.main{grid-area: main}
+.footer{grid-area: footer}
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: blue;
+  padding: 20px;
+  width: max-content;
+}
+#title{grid-area: title}
+.filter{grid-area: filter}
+
+.header{
+  display: grid;
+  grid-template-areas: 
+    'title title title filter filter filter';
+  gap: 20px;
+  background-color: teal;
+  padding: 10px;
+}
+.filter{
+  margin-top: 13%;
+}
+
+.card1{grid-area: card1}
+.card2{grid-area: card2}
+.card3{grid-area: card3}
+.card4{grid-area: card4}
+.card5{grid-area: card5}
+.card6{grid-area: card6}
+.card7{grid-area: card7}
+.card8{grid-area: card8}
+.card9{grid-area: card9}
+
+.card{
+  background-color: teal;
+  display: grid;
+  grid-template-areas:
+  'card1 card1 card2 card2 card3 card3'
+  'card4 card4 card5 card5 card6 card6'
+  'card7 card7 card8 card8 card9 card9';
+  gap: 10px;
+  padding: 10px 0px 10px 80px;
+}
+
+.flip{
+  background-color: blue;
+  width:max-content;
+  height: max-content;
+  perspective: 1000px;
+}
+.flip-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+ .flip-front, .flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-front{
+  background-color: #bbb;
+  color: black;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+.card img{
+  height: 280px;
+  width: 200px;
+  padding: 10px;
+  margin: 0px;
+}
+.card p{
+  width: 200px;
+  padding: 10px;
+  margin: 0px;
+}
