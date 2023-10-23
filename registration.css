@@ -1,0 +1,6 @@
+.container{
+    width: 800px;
+}
+.gender{
+    display: inline-flex;
+}
