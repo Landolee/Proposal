@@ -1,0 +1,56 @@
+body{
+    background-image: url(bin/car.jpg);
+    background-size: cover;
+}
+#main{
+    height: 530px;
+}
+#about h1{
+    margin-top: 100px;
+}
+#about p{
+    width: 400px;
+    margin-left: 150px;
+}
+#loginform{
+    width: 450px;
+    margin-left: 100px;
+    opacity: 90%;
+}
+#floating{
+    font-size: 14px;
+    height: 80px;
+}
+#loginform p{
+    font-size: 12px;
+}
+.loginimg img{
+    width: 30px;
+    height: 30px;
+}
+#loginform a{
+    color: black;
+}
+.footer .row{
+    background-color: rgb(187, 200, 209);
+    opacity: 60%;
+}
+.footer #logo{
+    display: inline-flex;
+}
+.footer img{
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+}
+.footer h1{
+    font-size: 15px;
+}
+.list-group{
+    font-size: 12px;
+    border-color: transparent;
+}
+.footer ul a{
+    color: black;
+    text-decoration: none;
+}
