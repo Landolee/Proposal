@@ -1,56 +1,23 @@
 body{
     background-image: url(bin/car.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
 }
+#main h1{
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    text-shadow: 2px 4px white;
+}
 #main{
-    height: 530px;
-}
-#about h1{
-    margin-top: 100px;
-}
-#about p{
-    width: 400px;
-    margin-left: 150px;
+    margin-top: 150px;
 }
 #loginform{
-    width: 450px;
-    margin-left: 100px;
-    opacity: 90%;
+    background-color: rgba(158, 118, 9, 0.466);
 }
-#floating{
-    font-size: 14px;
-    height: 80px;
+.modal{
+    background-color: rgba(158, 118, 9, 0.466);
 }
-#loginform p{
-    font-size: 12px;
-}
-.loginimg img{
-    width: 30px;
-    height: 30px;
-}
-#loginform a{
-    color: black;
-}
-.footer .row{
-    background-color: rgb(187, 200, 209);
-    opacity: 60%;
-}
-.footer #logo{
-    display: inline-flex;
-}
-.footer img{
-    border-radius: 50px;
-    height: 40px;
-    width: 40px;
-}
-.footer h1{
-    font-size: 15px;
-}
-.list-group{
-    font-size: 12px;
-    border-color: transparent;
-}
-.footer ul a{
-    color: black;
-    text-decoration: none;
-}
+
+
