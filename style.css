@@ -3,6 +3,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+#main{
+    margin-top: 150px;
+}
 #main h1{
     text-transform: uppercase;
     font-style: italic;
@@ -10,8 +13,14 @@ body{
     font-size: 100px;
     text-shadow: 2px 4px white;
 }
-#main{
-    margin-top: 150px;
+#main h2{
+    text-transform: capitalize;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-shadow: 2px 2px black; 
+    text-align: center;
+    color: rgb(199, 38, 9);
 }
 #loginform{
     background-color: rgba(158, 118, 9, 0.466);
