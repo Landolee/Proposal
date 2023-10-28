@@ -25,7 +25,7 @@
         </div>
         
         <div class="col-sm-4 mx-5">
-          <form action="" class="form-control" id="loginform">
+          <form action="" class="form-control" id="loginform" >
             <fieldset>
               
               <br />
@@ -55,95 +55,134 @@
               <hr>
               <h6 class="text-center text-black">or signup with</h6>
               <div class="container text-center">
-                <a href="https://www.facebook.com/" class="bi bi-facebook" ></a>
+                <a href="https://www.facebook.com/" class="bi bi-facebook"></a>
                 <a href="https://www.gmail.com/" class="bi bi-google"></a>
               </div>
               <!--no account-->
               <div class="col text-center text-black">
                 <p>No account yet?: <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#register">click here!</a></p>
-              </div>
-                <!--register modal-->
-                <div class="modal fade modal-xl" id="register">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <!--header-->
-                      <div class="modal-header">
-                        <h2>Registration form</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                      </div>
-                      <!--body-->
-                      <div class="modal-body">
-                        <div class="container">
-                          <form action="" class="form-control">
-                            <fieldset>                        
-                              <div class="row">
-                                <div class="col">
-                                  <label for="firsname" class="form-label fs-5">Firstname</label>
-                                  <input type="text" name="firstname" id="first" class="form-control" placeholder="Capitalized" required>
-                                </div>
-                                <div class="col">
-                                  <label for="middlename" class="form-label fs-5">Middlename</label>
-                                  <input type="text" name="middlename" id="middle" class="form-control" placeholder="Capitalized" required>
-                                </div>
-                                <div class="col">
-                                  <label for="lastname" class="form-label fs-5">Lastname</label>
-                                  <input type="text" name="lastname" id="last" class="form-control" placeholder="Capitalized" required>
-                                </div>
-                              </div>
-
-                              <div class="row">
-                                <div class="col-6">
-                                  <label for="email" class="form-label fs-5">Email</label>
-                                  <input type="email" name="email" id="email" placeholder="Example(lorem@gmail.com)" class="form-control" required>
-                                </div>
-                                <div class="col">
-                                  <label for="cellnum" class="form-label fs-5">Phone</label>
-                                  <input type="tel" name="cellnum" id="cellnum" class="form-control" placeholder="(+63)" required>
-                                </div>
-                                <div class="col">
-                                  <label for="gender" class="fs-5 form-label">Gender</label>
-                                  <div class="col form-check gender">
-                                      <input type="radio" class="form-check-input" id="male" name="optradio" value="male">
-                                      <label class="form-check-label" for="male">Male</label>
-                                  </div>
-                                  <div class="col form-check gender">
-                                      <input type="radio" class="form-check-input" id="female" name="optradio" value="female">
-                                      <label class="form-check-label" for="female">Female</label>
-                                  </div>
-                                </div>                                 
-                              </div>
-
-                              <div class="row">
-                                <div class="col-9">
-                                  <label for="address" class="form-label fs-5">Address</label>
-                                  <input type="search" name="address" id="address" class="form-control" placeholder="Street/Barangay/City/Province" required>
-                                </div>
-                                <div class="col">
-                                  <label for="zipcode" class="form-label fs-5">Zipcode</label>
-                                  <input type="text" name="zipcode" id="zipcode" class="form-control" placeholder="......" required>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-5">
-                                  <label for="idtype" class="form-label fs-5">Select ID type</label>
-                                  <input type="search" name="idtype" id="idtype" class="form-control" placeholder="(Identification)">
-                                </div>
-                              </div>
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
-
-                      <!--footer-->
-                      <div class="modal-footer">
-                        <button type="submit" class="btn btn-success">Submit</button>
-                        <button type="reset" class="btn btn-danger">Clear</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              </div>               
             </fieldset>
           </form>
+
+          <!--register modal-->
+          <div class="modal fade modal-xl-3" id="register">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!--header-->
+                <div class="modal-header">
+                  <h2>Registration form</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!--body-->
+                <div class="modal-body">
+                  <div class="container">
+                    <form action="">
+                      <fieldset>                        
+                        <div class="row">
+                          <div class="col">
+                            <label for="firsname" class="form-label fs-5">Firstname</label>
+                            <input type="text" name="firstname" id="first" class="form-control" placeholder="Capitalized" required>
+                          </div>
+                          <div class="col">
+                            <label for="middlename" class="form-label fs-5">Middlename</label>
+                            <input type="text" name="middlename" id="middle" class="form-control" placeholder="Capitalized" required>
+                          </div>
+                          <div class="col">
+                            <label for="lastname" class="form-label fs-5">Lastname</label>
+                            <input type="text" name="lastname" id="last" class="form-control" placeholder="Capitalized" required>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-6">
+                            <label for="email" class="form-label fs-5">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Example(lorem@gmail.com)" class="form-control" required>
+                          </div>
+                          <div class="col">
+                            <label for="cellnum" class="form-label fs-5">Phone</label>
+                            <input type="tel" name="cellnum" id="cellnum" class="form-control" placeholder="(+63)" required>
+                          </div>
+                          <div class="col">
+                            <label for="gender" class="fs-5 form-label">Gender</label>
+                            <div class="col form-check gender">
+                                <input type="radio" class="form-check-input" id="male" name="optradio" value="male">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="col form-check gender">
+                                <input type="radio" class="form-check-input" id="female" name="optradio" value="female">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                          </div>                                 
+                        </div>
+
+                        <div class="row">
+                          <div class="col-9">
+                            <label for="address" class="form-label fs-5">Address</label>
+                            <input type="search" name="address" id="address" class="form-control" placeholder="Street/Barangay/City/Province" required>
+                          </div>
+                          <div class="col">
+                            <label for="zipcode" class="form-label fs-5">Zipcode</label>
+                            <input type="text" name="zipcode" id="zipcode" class="form-control" placeholder="......" required>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-5">
+                            <label for="idtype" class="form-label fs-5">Select ID type</label>
+                            <input type="search" name="idtype" id="idtype" class="form-control" placeholder="(Identification)">
+                          </div>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+
+                <!--footer-->
+                <div class="modal-footer">
+                  <div class="sub-modal">
+                    <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#submit">Submit</button>
+                  </div>
+                  <button type="reset" class="btn btn-danger">Clear</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--second modal-->
+          <div class="modal fade" id="submit">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!--second modal header-->
+                <div class="modal-header">
+                  <h2>Review Inputed Infomation</h2>
+                  <div class="btn-close" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#register"></div>
+                </div>
+                <!--second modal body-->
+                <div class="modal-body">
+                  <div class="information">
+                    <h4>Fullname</h4>
+                    <p>this is the fullname</p>
+                    <h4>Email</h4>
+                    <p>this is the email</p>
+                    <h4>Phone</h4>
+                    <p>this is the phone</p>
+                    <h4>gender</h4>
+                    <p>this is the gender</p>
+                    <h4>address</h4>
+                    <p>this is the address</p>
+                    <h4>zipcode</h4>
+                    <p>this is the zipcode</p>
+                    <h4>Identification</h4>
+                    <p>this is the ID</p>
+                  </div>
+                </div>
+                <!--second modal footer-->
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-success">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
