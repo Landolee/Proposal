@@ -1,17 +1,27 @@
 body{
     background-image: url(bin/car.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 #main{
     margin-top: 150px;
 }
-#main h1{
+#main .page-title{
     text-transform: uppercase;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 100px;
     text-shadow: 2px 4px white;
+    text-align: center;
+}
+#main .page-subtitle{
+    text-transform: capitalize;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-shadow: 2px 2px black; 
+    text-align: center;
+    color: rgb(199, 38, 9);
 }
 #main h2{
     text-transform: capitalize;
@@ -22,12 +32,71 @@ body{
     text-align: center;
     color: rgb(199, 38, 9);
 }
+#login-container #loginform{
+    width: 500px;
+    margin-left: 100px;
+}
 #loginform{
     background-color: rgba(158, 118, 9, 0.466);
 }
 
 .modal{
     background-color: rgba(158, 118, 9, 0.466);
+}
+.footer{
+    background-color:rgba(156, 114, 35, 0.281) ;
+    height: 54px;
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        background-image: none;
+    }
+    #main{
+        margin: 0%;
+        background-color: lightgrey;
+    }
+    #main .page-title{
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 2px 2px black;
+        text-align: center;
+    }
+    #main .page-subtitle{
+        margin: 0%;
+        font-size: 30px;
+    }
+    #login-container #loginform{
+        width: 298px;
+        margin-left: 0px;
+    }
+    #register{
+        width: auto;
+    }
+    #register .modal-header h2{
+        font-size: 30px;
+        text-shadow: 1px 1px black; 
+        text-align: center;
+        color: rgb(199, 38, 9);
+    }
+    #submit .modal-header h2{
+        font-size: 30px;
+        text-shadow: 1px 1px black; 
+        text-align: center;
+        color: rgb(199, 38, 9);
+    }
+}
+
+@media only screen and (min-width: 375px){
+    #login-container #loginform{
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 425px){
+    #login-container #loginform{
+        width: 400px;
+    }
 }
 
 

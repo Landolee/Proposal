@@ -12,19 +12,17 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-{breakpoint}">
     
-    <div class="container" id="main">
+    <div class="container-fluid" id="main">
       <!--project name-->
       <div class="row">
         <div class="col text-primary">
-          <h1>Balol's</h1>
-          <h1 class="text-center">Car</h1>
-          <h1 class="text-end">Rental</h1>
-          <h2 class="mt-5">You Travel, Our Car</h2>
+          <h1 class="page-title">Balol's <br />Car <br />Rental</h1>
+          <h2 class="mt-5 page-subtitle">You Travel, Our Car</h2>
         </div>
         
-        <div class="col-sm-4 mx-5">
+        <div class="col-sm" id="login-container">
           <form action="" class="form-control" id="loginform" >
             <fieldset>
               
@@ -117,6 +115,19 @@
                         </div>
 
                         <div class="row">
+                          <div class="col-6">
+                            <label for="pass" class="form-label fs-5">Password</label>
+                            <input type="password" name="pass" id="pass" class="form-control" required>
+                          </div>
+                          <div class="form-check col-6 mt-5">
+                            <label class="form-check-label text-black">
+                              <input type="checkbox" name="rememer" id="remember" value="check" class="form-check-input">
+                              Show Password
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="row">
                           <div class="col-9">
                             <label for="address" class="form-label fs-5">Address</label>
                             <input type="search" name="address" id="address" class="form-control" placeholder="Street/Barangay/City/Province" required>
@@ -163,6 +174,8 @@
                     <p>this is the fullname</p>
                     <h4>Email</h4>
                     <p>this is the email</p>
+                    <h4>Password</h4>
+                    <p>this is the password</p>
                     <h4>Phone</h4>
                     <p>this is the phone</p>
                     <h4>gender</h4>
@@ -186,6 +199,9 @@
         </div>
 
       </div>
+    </div>
+    <div class="footer">
+      <p class="text-center text-black">&copy;All rights reserved!</p>
     </div>
   </div>
 </body>
