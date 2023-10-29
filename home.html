@@ -4,48 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Balol's Car Rental</title>
   <link rel="stylesheet" href="home.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>Balol's Car Rental</title>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-{breakpoint}">
+    <!--header-->
     <div class="header">
-      <div class="drop-btn">
-        <button class="button" type="button">=</button>
-        <div class="drop-content">
-          <img src="bin/profile.jpg" alt="profile" width="50px;" height="50px;">
-          <h5>Account</h5>
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante sed purus egestas, at egestas neque aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-          <hr>
-          <a href="Settings">Settings</a>
-          <br>
-          <a href="index.html">Logout</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"><img src="bin/logo.jpg" alt="this is a photo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mt-5" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rentacar.html">Rent</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Settings
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item fs-5" href="#">Profile</a></li>
+                  <li><a class="dropdown-item fs-5" href="index.html">Logout</a></li>
+                  <li><a class="dropdown-item fs-5" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </div>
+    <!--mainbody-->
+    <div class="main">
+      <div class="container-fluid bg-primary">
+        <video src="bin/vios.mp4" autoplay loop muted></video>
       </div>
-      <div class="nav">
-        <a href="home.html">Home</a>
-        <a href="rentacar.html">Rent</a>
-      </div>
     </div>
-    <hr>
-    <div class="main-left">
-      <video src="bin/vios.mp4" height="100%" width="100%" autoplay="autoplay" loop muted></video>
-    </div>
-    <div class="main-right">
-      <h1>balol's</h1>
-      <h1 id="car">car </h1>
-      <h1 id="rental">rental</h1>
-    </div>
-    
+    <!--Footer-->
     <div class="footer">
-      <h4>Let us know:</h4>
-      <div class="social">
-        <img src="bin/facebook.png" alt="bin/facebook.png">
-        <a href="https://m.facebook.com/?wtsid=rdr_0S4fH1iwUhFizkL2M">Facebook</a>
-        <img src="bin/gmail.png" alt="bin/gmail.png">
-        <a href="https://accounts.google.com/v3/signin/identifier?hl=en-GB&ifkv=AYZoVhf372XdzIUPJVrlOb9xiPrqCzA_zGPtse-4XrpgkJ4jj6ACr_2GnIRMLHtnI4w5uG472t4YDQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-603854410%3A1697235841529245&theme=glif">Email</a>
+      <div class="container-fluid bg-success">
+        <h1>this is the footer</h1>
       </div>
     </div>
   </div>
