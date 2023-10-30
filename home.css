@@ -35,10 +35,15 @@
 }
 .features{
   background-color: rgba(158, 118, 9, 0.466);
+  height: ;
+}
+table tr{
+  font-size: 12px;
 }
 video{
-  width: 910px;
+  width: 100%;
 }
+
 .footer{
   height: 100px;
   background-color: rgba(158, 118, 9, 0.466);
