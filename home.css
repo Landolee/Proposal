@@ -5,15 +5,41 @@
   border-radius: 50%;
 }
 .header img:hover{
-  border: 5px solid aqua;
+  border: solid rgba(158, 118, 9, 0.466);
 }
 .header li{
   font-size: 30px;
 }
 .header ul li:hover{
-  background-color: aqua;
+  background-color: white;
   border-radius: 10%;
 }
+.navbar{
+  background-color: rgba(158, 118, 9, 0.466);
+}
 .main{
-  height: 1000px;
+  height: 100%;
+}
+.side-article{
+  background-color: rgba(158, 118, 9, 0.466);
+}
+.top-portion{
+  height: 400px;
+}
+.map{
+  background-color: rgba(158, 118, 9, 0.466);
+}
+.map img{
+  width: 100%;
+  height: 330px;
+}
+.features{
+  background-color: rgba(158, 118, 9, 0.466);
+}
+video{
+  width: 910px;
+}
+.footer{
+  height: 100px;
+  background-color: rgba(158, 118, 9, 0.466);
 }
