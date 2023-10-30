@@ -67,8 +67,10 @@ body{
         font-size: 30px;
     }
     #login-container #loginform{
-        width: 298px;
+        width: 100%;
         margin-left: 0px;
+        margin-top: 5px;
+        margin-bottom: 15px;
     }
     #register{
         width: auto;
@@ -84,18 +86,6 @@ body{
         text-shadow: 1px 1px black; 
         text-align: center;
         color: rgb(199, 38, 9);
-    }
-}
-
-@media only screen and (min-width: 375px){
-    #login-container #loginform{
-        width: 350px;
-    }
-}
-
-@media only screen and (min-width: 425px){
-    #login-container #loginform{
-        width: 400px;
     }
 }
 
