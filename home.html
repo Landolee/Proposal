@@ -14,56 +14,59 @@
 <body>
   <div class="container-{breakpoint}">
     <!--header-->
-    <div class="header m-1">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="home.html"><img src="bin/logo.jpg" alt="this is a photo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse mt-5" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#features">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="rentacar.html">Rent</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Settings
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item fs-5" href="#">Profile</a></li>
-                  <li><a class="dropdown-item fs-5" href="index.html">Logout</a></li>
-                  <li><a class="dropdown-item fs-5" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <div class="header m-1 sticky-top">  
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <h1 class="text-primary">Balol's Car Rental</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse mt-5" id="navbarDropdown">
+                <b><ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="rentacar.html">Rent</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Settings
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="DropdownMenu" id="drop-choices">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul></b>
+              </div>
+              <a class="navbar-brand" href="home.html"><img src="bin/logo.jpg" alt="this is a photo"></a>    
+            </div>     
+          </nav>
     </div>
+    <hr>
     <!--mainbody-->
     <div class="main">
       <div class="container-fluid">
-        <div class="row top-portion">
+        <div class="row">
           <div class="col-8 m-1 side-article">
             <article>
+              <h1 class="text-primary">About Us</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus adipisci nulla quia fuga aperiam temporibus distinctio nam quam voluptatibus modi assumenda soluta ipsum aspernatur ipsam, ducimus, iusto earum dolor officiis quo maxime consequuntur consectetur. Eum magnam, saepe animi expedita nemo, mollitia rerum repudiandae omnis, minus nihil laudantium non quam ipsa maiores excepturi eligendi maxime. Vitae aliquam fugit aspernatur aperiam a quod fuga delectus? Reiciendis iste aspernatur obcaecati beatae soluta praesentium totam, delectus quaerat placeat doloribus mollitia adipisci aut fugiat aperiam odio esse consequuntur molestiae? Eius autem sit, omnis suscipit, pariatur impedit aliquam quia exercitationem deleniti rem earum, beatae veniam iste aliquid! Earum sunt doloribus nisi porro a fuga enim iste saepe magni explicabo quibusdam sit quod, mollitia perspiciatis eos in possimus consequuntur sed at, perferendis aut? Laboriosam exercitationem distinctio, dolorum quae quaerat atque sunt adipisci a aut dolores omnis et deleniti. Ex laboriosam adipisci, soluta odio eligendi consectetur. Maxime odio consectetur nesciunt. Facere quo minus itaque pariatur, rerum officiis ipsum natus repellendus? Cumque possimus nisi eligendi aliquid laboriosam voluptatem eos cupiditate nulla illum quisquam quae autem, et laborum nam minus enim debitis numquam praesentium animi voluptates ad ipsam. Voluptatum neque fugit blanditiis eum eius sed placeat temporibus exercitationem? Dolorem, recusandae.</p>
             </article>
           </div>
           <div class="col m-1 map">
-            <h3 class="text-center">Geolocation</h3>
+            <h3 class="text-primary">Geolocation</h3>
             <img src="bin/map.jpg" alt="this is a photo">
           </div>
         </div>
-        <div class="row bottom-portion">
+        <div class="row">
           <div class="col-4 m-1 features" id="features">
-            <h1>Featured</h1>
+            <h1 class="text-primary">Featured</h1>
             <h3><u>Toyota Vios</u></h3>
             <article>
               <p>The Toyota Vios is a bestseller, yes, but it's not exactly the type of car you would think to bring up to Baguio on a long road trip. But that's exactly what Toyota Motor Philippines (TMP) decided to do on the latest leg of its media drive series. Our first stop after Manila was in Pampanga for lunch, before we drove on north to La Union.</p>
@@ -149,18 +152,18 @@
               </tbody>
             </table>
           </div>
-          <div class="col mt-1">
+          <div class="col mt-1 feature-model">
             <video src="bin/vios.mp4" autoplay loop muted></video>
             <div id="Controls" class="carousel carousel-dark slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="bin/vios.jpg" class="d-block w-100" alt="this is a photo" height="450px">
+                  <img src="bin/vios.jpg" class="d-block w-100" alt="this is a photo">
                 </div>
                 <div class="carousel-item">
-                  <img src="bin/vios-black.jpg" class="d-block w-100" alt="this is a photo" height="450px">
+                  <img src="bin/vios-black.jpg" class="d-block w-100" alt="this is a photo">
                 </div>
                 <div class="carousel-item">
-                  <img src="bin/vios-white.png" class="d-block w-100" alt="this is a photo" height="450px">
+                  <img src="bin/vios-white.png" class="d-block w-100" alt="this is a photo">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#Controls" data-bs-slide="prev">

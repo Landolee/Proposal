@@ -1,49 +1,102 @@
+.navbar{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+.header h1{
+  font-size: 70px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 2px 4px rgba(158, 118, 9, 0.466);
+  text-align: center;
+}
+.navbar ul{
+  margin: 30px 10px 0px 10px;
+  font-size: 25px;
+}
+.navbar ul li{
+  padding-right: 20px;
+}
+#drop-choices li{
+  font-size: 15px;
+}
 .header img{
   width: 120px;
   height: 120px;
-  border: 5px solid white;
+  border: 5px solid lightblue;
   border-radius: 50%;
 }
 .header img:hover{
   border: solid rgba(158, 118, 9, 0.466);
 }
-.header li{
-  font-size: 30px;
-}
-.header ul li:hover{
-  background-color: white;
-  border-radius: 10%;
-}
-.navbar{
-  background-color: rgba(158, 118, 9, 0.466);
-}
 .main{
   height: 100%;
+  width: 100%;
 }
 .side-article{
-  background-color: rgba(158, 118, 9, 0.466);
+  background-color: rgba(158, 118, 9, 0.274);
+  border-radius: 10px;
+  height: 100%;
 }
-.top-portion{
-  height: 400px;
+.side-article h1{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 1px 2px white;
+  text-align: center;
 }
 .map{
-  background-color: rgba(158, 118, 9, 0.466);
+  background-color: rgba(158, 118, 9, 0.274);
+  border-radius: 10px;
+  width: 100%;
+}
+.map h3{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 1px 2px white;
+  text-align: center;
 }
 .map img{
   width: 100%;
-  height: 330px;
+  height: 85%;
 }
 .features{
-  background-color: rgba(158, 118, 9, 0.466);
-  height: ;
+  background-color: rgba(158, 118, 9, 0.274);
+  border-radius: 10px;
+  width: 100%;
+}
+.features h1{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 1px 2px white;
+}
+.features h3{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 1px 2px white;
 }
 table tr{
   font-size: 12px;
 }
-video{
+.feature-model{
+  width: 100%;
+  height: 100%;
+}
+.feature-model video{
   width: 100%;
 }
-
+.feature-model img{
+  width: 100%;
+  height: 400px;
+}
 .footer{
   height: 100px;
   background-color: rgba(158, 118, 9, 0.466);
