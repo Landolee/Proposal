@@ -35,12 +35,12 @@
 }
 .main{
   height: 100%;
-  width: 100%;
 }
 .side-article{
   background-color: rgba(158, 118, 9, 0.274);
   border-radius: 10px;
   height: 100%;
+  width: 100%;
 }
 .side-article h1{
   font-size: 30px;
@@ -109,4 +109,93 @@ table tr{
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-shadow: 2px 4px rgba(158, 118, 9, 0.466);
+}
+.footer button{
+  width: 150px;
+  padding: 3px;
+  font-size: 15px;
+}
+.footer button:hover{
+  background-color: white;
+  color: black;
+}
+.footer h4{
+  font-size: 20px;
+}
+.footer b{
+  font-size: 12px;
+}
+
+@media only screen and (max-width:768px){
+  .header{
+    width: 100%;
+  }
+  .header h1{
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 1px 2px rgba(158, 118, 9, 0.466);
+  }
+  .navbar button{
+    display: block;
+    height: 50px;
+    width: 20%;
+  }
+  .navbar ul li{
+    font-size: 12px;
+  }
+  #drop-choices{
+    height: fit-content;
+    width: fit-content;
+  }
+  #drop-choices li{
+    font-size: 10px;
+  }
+  .header img{
+    display: none;
+  }
+  .main .side-article{
+    width: 98%;
+    margin: 2px 5px 2px 5px;
+  }
+  .side-article h1{
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .side-article p{
+    font-size: 12px;
+
+  }
+  .map h3{
+    font-size: 15px;
+  }
+  .map img{
+    width: 100%;
+    height: 85%;
+  }
+  .features{
+    display: none;
+  }
+  .feature-model video{
+    height: 100%;
+  }
+  .feature-model img{
+    height: 100%;
+  }
+  .footer h1{
+    font-size: 15px;
+  }
+  .footer h6{
+    font-size: 10px;
+  }
+  .footer button{
+    width: 100px;
+    padding: 3px;
+    font-size: 10px;
+  }
+  .footer h4{
+    font-size: 12px;
+  }
+  .footer b{
+    font-size: 10px;
+  }
 }
