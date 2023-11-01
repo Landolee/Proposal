@@ -1,3 +1,140 @@
 *body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.header{
+    background-color: white;
+}
+.header img{
+    width: 120px;
+    height: 120px;
+    border: 5px solid lightblue;
+    border-radius: 50%;
+}
+.header img:hover{
+    border: 5px solid rgba(158, 118, 9, 0.466);
+}
+.header h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 4px rgba(158, 118, 9, 0.466);
+}
+.main{
+    padding: 5px;
+}
+.main .row{
+    height: 100%;
+    width: 100%;
+}
+.model-photo{
+    background-color: rgba(158, 118, 9, 0.466);
+    height: 100%;
+    border-radius: 10px;
+}
+.model-photo img{
+    height: 100%;
+    width: 100%;
+}
+.model-photo .book{
+    margin-top: 2px;
+}
+.model-photo .intro{
+    margin-top: 2px;
+}
+#specifications{
+    background-size: 100%;
+    background-color: rgba(158, 118, 9, 0.466);
+    border-radius: 10px;
+    margin-left: 10px;
+}
+table tr{
+    font-size: 12px;
+}
+.footer{
+    height: 100px;
+  }
+  .footer h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 2px rgba(158, 118, 9, 0.466);
+  }
+  .footer button{
+    width: 150px;
+    padding: 3px;
+    font-size: 15px;
+  }
+  .footer button:hover{
+    background-color: white;
+    color: black;
+  }
+  .footer h4{
+    font-size: 20px;
+  }
+  .footer b{
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px){
+    .header img{
+        width: 100px;
+        height: 100px;
+    }
+    .header h1{
+        font-size: 40px;
+        text-shadow: 1px 2px rgba(158, 118, 9, 0.466);
+    }
+    #specifications{
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .main img{
+        height: 100%;
+        width: 100%;
+    }
+    .main h1{
+        font-size: inherit;
+    }
+    .footer h1{
+        font-size: 15px;
+    }
+    .footer h6{
+        font-size: 10px;
+    }
+    .footer button{
+        width: 100px;
+        padding: 3px;
+        font-size: 10px;
+    }
+    .footer h4{
+        font-size: 12px;
+    }
+    .footer b{
+        font-size: 10px;
+    }    
+}
+
+@media only screen and (max-width: 425px){
+    .header img{
+        width: 40px;
+        height: 40px;
+        border: 2px solid lightblue;
+    }
+    .header h1{
+        font-size: 30px;
+        text-shadow: 1px 2px rgba(158, 118, 9, 0.466);
+    }
+    .card{
+        height: 100%;
+        width: 100%;
+    }
+    .card h4{
+        font-size: 16px;
+    }
+    .card p{
+        font-size: 12px;
+    }
+}
