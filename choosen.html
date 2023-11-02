@@ -42,10 +42,34 @@
                 <img src="bin/vios.jpg" alt="this is a photo">   
                 <div class="row">
                     <div class="col-2 book">
-                        <button type="button" class="my-1 btn btn-secondary bi-book"></button>
+                        <button type="button" class="my-1 btn btn-secondary bi-book" data-bs-toggle="modal" data-bs-target="#book"></button>
                     </div>               
                 </div>            
             </div>
+            <!--modal-book-->
+              <div class="modal" id="book">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3>Booking</h3>
+                      <button type="button" class="btn btn-close btn-danger" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h6>Fullname: </h6>
+                      <p>Rodnie Dumaghan</p>
+                      <h6>Email: </h6>
+                      <p><a href="https://www.gmail.com/">landolee1233@gmail.com</a></p>
+                      <h6>Booked Car:</h6>
+                      <p>Toyota Vios</p>
+                      <h6>Presented I.D: </h6>
+                      <p>Driver's License</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="home.html" class="btn btn-success">Book</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             <!---->
             <div class="col-4" id="specifications">
                 <h1 class="text-center">Specifications</h1>
