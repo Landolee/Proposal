@@ -72,6 +72,9 @@
 .feature-model video{
   width: 100%;
 }
+.feature-model img{
+  height: 500px;
+}
 .features h1{
   font-size: 30px;
   text-transform: uppercase;

@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="chosen.css">
+    <link rel="stylesheet" href="choosen.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Toyota Vios</title>
+    <link rel="icon" type="image/x-icon" href="bin/logo.jpg">
 </head>
 <body>
     <!--header-->
     <div class="container-{breakpoint} header mb-3 sticky-top">
-        <div class="row container-fluid p-2">
-            <div class="col-10">
-                <h1 class="text-black">Balol's Car Rental</h1>
-            </div>
-            <div class="col text-end">
-                <a class="navbar-brand" href="home.html"><img src="bin/logo.jpg" alt="this is a photo"></a>
-            </div>
-        </div>           
+      <div class="row">
+        <div class="col-10 title-page">
+          <a href="home.html">Balol's car rental</a>
+        </div> 
+        <div class="col logo">
+          <a href="home.html"><img src="bin/logo.jpg" alt="this is a photo"></a>
+        </div>
+      </div>           
     </div>
     <hr>
     <!--main-->
@@ -28,10 +29,12 @@
         <div class="col intro">
           <div class="card">
               <div class="card-header">
-                  <h4>Toyota Vios</h4>
+                  <h4>Toyota Vios White</h4>
               </div>
               <div class="card-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officia necessitatibus, optio saepe ut doloribus cumque itaque facilis aperiam voluptatibus, voluptatum neque ad, reiciendis eius dolores nemo aut similique repellendus.</p>
+                <article>
+                  <p>The Toyota Vios is a bestseller, yes, but it's not exactly the type of car you would think to bring up to Baguio on a long road trip. But that's exactly what Toyota Motor Philippines (TMP) decided to do on the latest leg of its media drive series. Our first stop after Manila was in Pampanga for lunch, before we drove on north to La Union.</p>
+                </article>
               </div>
           </div>
         </div>
@@ -39,7 +42,7 @@
       <!---->
         <div class="row container-fluid">
             <div class="col model-photo p-3">
-                <img src="bin/vios.jpg" alt="this is a photo">   
+                <img src="bin/vios-white.png" alt="this is a photo">   
                 <div class="row">
                     <div class="col-2 book">
                         <button type="button" class="my-1 btn btn-secondary bi-book" data-bs-toggle="modal" data-bs-target="#book"></button>
@@ -47,7 +50,7 @@
                 </div>            
             </div>
             <!--modal-book-->
-              <div class="modal" id="book">
+              <div class="modal fade" id="book">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -55,22 +58,82 @@
                       <button type="button" class="btn btn-close btn-danger" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
-                      <h6>Fullname: </h6>
+                      <h5>Fullname: </h5>
                       <p>Rodnie Dumaghan</p>
-                      <h6>Email: </h6>
+                      <h5>Email: </h5>
                       <p><a href="https://www.gmail.com/">landolee1233@gmail.com</a></p>
-                      <h6>Booked Car:</h6>
-                      <p>Toyota Vios</p>
-                      <h6>Presented I.D: </h6>
+                      <h5>Address</h5>
+                      <p>Poblacion, Pitogo Zamboanga del Sur</p>
+                      <h5>Zipcode</h5>
+                      <p>7033</p>
+                      <h5>Phone Number</h5>
+                      <p>09664169464</p>
+                      <p>09517981903</p>
+                      <h5>Booked Car:</h5>
+                      <p>Toyota Vios White</p>
+                      <h5>Presented I.D: </h5>
                       <p>Driver's License</p>
+                      <form action="" class="form-control">
+                        <label for="booking-date" class="form-label">Estimated date and time of booking</label>
+                        <br />
+                        <input type="datetime-local" name="booking-date" id="booking-date">
+                      </form>
                     </div>
                     <div class="modal-footer">
-                      <a href="home.html" class="btn btn-success">Book</a>
+                      <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#booked">Book</button>
                     </div>
                   </div>
                 </div>
               </div>
-            <!---->
+            <!--end of modal booking-->
+            <!--modal booked-->
+            <div class="modal fade" id="booked">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3>Thank you for choosing Balols Car Rental for your vehicle needs!</h3>
+                    <button type="submit" class="btn btn-close btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#book"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Your booking has been confirmed, and we're excited to provide you with a seamless and enjoyable rental experience. Our team is dedicated to ensuring that your journey is smooth and comfortable. Rest assured, your selected vehicle will be ready for pick-up at your designated time. Should you have any further queries or require assistance, feel free to contact us. We appreciate your trust in our services and look forward to serving you. Safe travels!</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#payment">Payment Method</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of modal booked-->
+            <!--modal payment-->
+            <div class="modal fade" id="payment">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3>Payment Method</h3>
+                    <button type="submit" class="btn btn-close btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#booked"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>At Balols Car Rental, we strive to make your rental experience as convenient as possible. To ensure a hassle-free process, we offer a variety of flexible payment methods for your convenience. From credit and debit cards to digital wallets and even cash transactions, we cater to diverse preferences, making it easy for you to settle your rental fees securely. Our goal is to provide a seamless and accommodating payment experience, allowing you to focus on enjoying your journey with one less worry on your mind.</p>
+                    <div class="row">
+                      <div class="col">
+                        <img src="bin/visa.png" alt="this is a photo" height="50px" width="140px">                       
+                      </div>
+                      <div class="col">
+                        <img src="bin/security.png" alt="this is a photo" height="50px" width="120px">
+                      </div>
+                      <div class="col">
+                        <img src="bin/gcash.png" alt="this is a photo" height="50px" width="120px">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <p>if ever you want to cancel your "booking pls go to "My Booking" at the home page (Note: canceling a booking will cause you fare charges!)</p>
+                    <a href="home.html" class="btn btn-success">Okay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of modal payment-->
             <div class="col-4" id="specifications">
                 <h1 class="text-center">Specifications</h1>
                 <table class="table text-black">
@@ -159,52 +222,120 @@
     </div>
     <hr>
     <!--footer-->
-    <div class="container-{breakpoint} footer mt-2 mb-3">       
+  <div class="container-{breakpoint} footer">
+    <!--row-->
+    <div class="row">
+      <!---->
+      <div class="col-sm-3 text-center">
+        <h1>Balol's Car Rental</h1>
+        <h6>&copy;Balol's Car Rental 2023</h6>
+      </div>
+      <!---->
+      <!---->
+      <div class="col-sm-2">
+        <center>
+        <a href="https://www.facebook.com/Roeljr.galban">
+          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook m-2" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+        </a>
+        <a href="https://www.gmail.com/">
+          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-google m-2" viewBox="0 0 16 16">
+          <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/">
+          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-instagram m-2" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg>
+        </a>
+      </center>
+      </div>
+      <!---->
+      <!--nested-->
+      <div class="col-sm-7">
         <div class="row">
-            <!---->
-            <div class="col-4 text-center">
-                <h1>Balol's Car Rental</h1>
-                <h6>&copy;Balol's Car Rental 2023</h6>
+          <div class="col">
+            <button type="button" class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#privacy">Privacy Policy</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#terms">Terms & Conditions</button>
+          </div>
+          <div class="col">
+            <h4>Contact us:</h4>
+            <div class="row">
+              <div class="col"><b>+639664169464</b></div>
+              <div class="col"><b>+639517981903</b></div>
             </div>
-            <!---->
-            <div class="col-2">
-                <a href="https://www.facebook.com/Roeljr.galban">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-facebook m-2" viewBox="0 0 16 16">
-                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                  </svg>
-                </a>
-                <a href="https://www.gmail.com/">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-google m-2" viewBox="0 0 16 16">
-                  <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
-                  </svg>
-                </a>
-                <a href="https://www.instagram.com/">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-instagram m-2" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                  </svg>
-                </a>
-            </div>
-            <div class="col">
-                <div class="row">
-                  <div class="col">
-                    <button type="button" class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#privacy">Privacy</button>
-                  </div>
-                  <div class="col">
-                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#terms">Terms & Conditions</button>
-                  </div>
-                  <div class="col">
-                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#users">Users Agreements</button>
-                  </div>
-                  <div class="col">
-                    <h4>Contact us:</h4>
-                    <div class="row">
-                      <div class="col"><b>+639664169464</b></div>
-                      <div class="col"><b>+639517981903</b></div>
-                    </div>
-                  </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <!--nested end-->
     </div>
+    <!--end row-->
+  </div>
+  <!--end footer-->
+  <!--modals-->
+    <!--modal privacy-->
+    <div class="modal fade" id="privacy">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="text-black">Privacy Policy</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div> 
+          <div class="modal-body">
+            <p>This Privacy Policy governs the manner in which Balol's Car Rental collects, uses, maintains, and discloses information collected from users (each, a "User") of the Balol's Car Rental website. This privacy policy applies to the Site and all products and services offered by Balol's Car Rental.</p>
+            <h5>Information Collection, Use, and Sharing</h5>
+            <p>We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you. We will not sell or rent this information to anyone.</p>
+            <p>We will use your information to respond to you regarding the reason you contacted us. We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, e.g. to ship an order.</p>
+            <p>Unless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy.</p>
+            <h5>Your Access to and Control Over Information</h5>
+            <p>You may opt-out of any future contacts from us at any time. You can do the following at any time by contacting us via the email address or phone number given on our website:</p>
+            <p>See what data we have about you, if any.
+              Change/correct any data we have about you.
+              Have us delete any data we have about you.
+              Express any concern you have about our use of your data.
+              Security</p>
+            <p>We take precautions to protect your information. When you submit sensitive information via the website, your information is protected both online and offline.</p>
+          </div>
+          <div class="modal-footer">
+            <p>&copy;Balol's Car Rental 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal terms & conditions-->
+    <div class="modal fade" id="terms">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="text-black">Terms & Conditions</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div> 
+          <div class="modal-body">
+              <h5>1. Agreement to Terms</h5>            
+              <p>By accessing or using our services, you agree to be bound by these Terms and Conditions.</p>             
+              <h5>2. Car Rental Conditions</h5>
+              <p>The user must meet the minimum age requirement for renting a car as per local laws.</p>
+              <p>The user is responsible for returning the car in the same condition it was rented in, barring normal wear and tear.</p>
+              <p>The user is liable for any damages incurred during the rental period and must adhere to the rental agreement.</p>
+              <h5>3. User Agreement</h5>
+              <p>Users are required to provide accurate personal information for the rental process.</p>
+              <p>Users must comply with all local traffic and parking laws during the rental period.</p>
+              <p>Users are responsible for the safety and security of the rented vehicle during the rental period.</p>
+              <h5>4. Limitation of Liability</h5>
+              <p>Balol's Car Rental shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly.</p>
+              <h5>5. Changes to Terms and Conditions</h5>
+              <p>Balol's Car Rental has the discretion to update these terms at any time. We encourage Users to frequently check this page for any changes to stay informed.</p>
+              <p>By using this Site, you signify your acceptance of this policy. If you do not agree</p>     
+          </div>
+          <div class="modal-footer">
+            <p>&copy;Balol's Car Rental 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
 </body>
 </html>
