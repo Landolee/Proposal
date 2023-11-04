@@ -1,234 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <title>Balol's Car Rental</title>
 </head>
 
-<body>
-  <div class="container-{breakpoint}">
-    
-    <div class="container-fluid" id="main">
-      <!--project name-->
-      <div class="row">
-        <div class="col text-primary">
-          <h1 class="page-title">Balol's <br />Car <br />Rental</h1>
-          <h2 class="mt-5 page-subtitle">You Travel, Our Car</h2>
-        </div>
-        
-        <div class="col-sm" id="login-container">
-          <form action="" class="form-control" id="loginform" >
-            <fieldset>
-              
-              <br />
-              <!--email container-->
-              <div class="email-container form-floating">
-                <input type="email" name="email" id="email" placeholder="@Email" class="form-control" required>
-                <label for="email form-label">@Email</label>
+<body> 
+<!--main-->
+<div class="container fluid main">
+  <div class="row">
+    <!--project name-->
+    <div class="col page-title">
+      <h1 class="text-white">Balol's <br />Car <br />Rental</h1>
+      <h2 class="text-white">You Travel, Our Car</h2>
+    </div>
+    <!---->
+    <!--login form-->
+    <div class="col login-form">
+      <form action="" class="form-control" id="loginform">
+        <fieldset>  
+          <br />
+          <!--email container-->
+          <div class="email-container form-floating">
+            <input type="email" name="email" id="email" placeholder="@Email" class="form-control" required>
+            <label for="email form-label">@Email</label>
+          </div>
+          <br />
+          <!--password container-->
+          <div class="password-container form-floating">
+            <input type="password" name="pass" id="pass" placeholder="" class="form-control" required>
+            <label for="pass">Password</label>
+          </div>
+          <!--remember me-->
+          <div class="form-check">
+            <label class="form-check-label text-black">
+              <input type="checkbox" name="rememer" id="remember" value="check" class="form-check-input">
+              Remember me
+            </label>
+          </div>
+          <!--login button-->
+          <center><a href="home.html" class="btn btn-primary col-md-5">Login</a></center>             
+          <!--or signup with-->
+          <hr>
+          <h6 class="text-center text-black">or signup with</h6>
+          <div class="container text-center">
+            <a href="https://www.facebook.com/" style="text-decoration: none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-facebook m-1" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </a>
+            <a href="https://www.gmail.com/" style="text-decoration: none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-google m-1" viewBox="0 0 16 16">
+                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+              </svg>
+            </a>
+          </div>
+          <!--no account-->
+          <div class="col text-center text-black">
+            <p>No account yet?: <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#register">click here!</a></p>
+          </div>               
+        </fieldset>
+      </form>
+    </div>
+    <!---->
+  </div>
+</div>
+<!--end main-->
+
+<!--register modal-->
+<div class="modal fade modal-xl-3" id="register">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!---->
+      <div class="modal-header">
+        <h2>Registration form</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <!---->
+      <!---->
+      <div class="modal-body">
+        <form action="" class="needs-validation" novalidate>
+          <!---->
+          <div class="row">
+            <div class="col">
+              <label for="firstname" class="form-label">Firstname</label>
+              <input type="text" name="firstname" id="firsname" class="form-control" placeholder="Capitalized" required>
+              <div class="valid-feedback">
+                valid!
               </div>
-              <br />
-              <!--password container-->
-              <div class="password-container form-floating">
-                <input type="password" name="pass" id="pass" placeholder="" class="form-control" required>
-                <label for="pass">Password</label>
+              <div class="invalid-feedback">
+                Must begin with Capital!
               </div>
-              <!--remember me-->
+            </div>
+            <div class="col">
+              <label for="Lastname" class="form-label">Lastname</label>
+              <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Capitalized" required>
+              <div class="valid-feedback">
+                valid!
+              </div>
+              <div class="invalid-feedback">
+                Must begin with Capital!
+              </div>
+            </div>
+          </div>
+          <!---->
+          <div class="row">
+            <div class="col">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="@Email.com" required>
+              <div class="invalid-feedback">
+                invalid username!
+              </div>
+            </div>
+          </div>
+          <!---->
+          <div class="row">
+            <div class="col">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+              <div class="invalid-feedback">
+                password must starts with (capital) and must contain special symbols like (@, _, - ) and alpha numeric numbers
+              </div>
               <div class="form-check">
                 <label class="form-check-label text-black">
                   <input type="checkbox" name="rememer" id="remember" value="check" class="form-check-input">
-                  Remember me
+                  Show Password
                 </label>
               </div>
-              <!--login button-->
-              <center><a href="home.html" class="btn btn-primary col-md-5">Login</a></center>             
-              <!--or signup with-->
-              <hr>
-              <h6 class="text-center text-black">or signup with</h6>
-              <div class="container text-center">
-                <a href="https://www.facebook.com/">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-facebook m-1" viewBox="0 0 16 16">
-                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                  </svg>
-                </a>
-                <a href="https://www.gmail.com/">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-google m-1" viewBox="0 0 16 16">
-                    <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
-                  </svg>
-                </a>
-              </div>
-              <!--no account-->
-              <div class="col text-center text-black">
-                <p>No account yet?: <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#register">click here!</a></p>
-              </div>               
-            </fieldset>
-          </form>
-
-          <!--register modal-->
-          <div class="modal fade modal-xl-3" id="register">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <!--header-->
-                <div class="modal-header">
-                  <h2>Registration form</h2>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <!--body-->
-                <div class="modal-body">
-                  <div class="container">
-                    <form action="">
-                      <fieldset>                        
-                        <div class="row">
-                          <div class="col">
-                            <label for="firsname" class="form-label fs-5">Firstname</label>
-                            <input type="text" name="firstname" id="first" class="form-control" placeholder="Capitalized" required>
-                          </div>
-                          <div class="col">
-                            <label for="middlename" class="form-label fs-5">Middlename</label>
-                            <input type="text" name="middlename" id="middle" class="form-control" placeholder="Capitalized" required>
-                          </div>
-                          <div class="col">
-                            <label for="lastname" class="form-label fs-5">Lastname</label>
-                            <input type="text" name="lastname" id="last" class="form-control" placeholder="Capitalized" required>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-6">
-                            <label for="email" class="form-label fs-5">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Example(lorem@gmail.com)" class="form-control" required>
-                          </div>
-                          <div class="col">
-                            <label for="cellnum" class="form-label fs-5">Phone</label>
-                            <input type="tel" name="cellnum" id="cellnum" class="form-control" placeholder="(+63)" required>
-                          </div>
-                          <div class="col">
-                            <label for="gender" class="fs-5 form-label">Gender</label>
-                            <div class="col form-check gender">
-                                <input type="radio" class="form-check-input" id="male" name="optradio" value="male">
-                                <label class="form-check-label" for="male">Male</label>
-                            </div>
-                            <div class="col form-check gender">
-                                <input type="radio" class="form-check-input" id="female" name="optradio" value="female">
-                                <label class="form-check-label" for="female">Female</label>
-                            </div>
-                          </div>                                 
-                        </div>
-
-                        <div class="row">
-                          <div class="col-6">
-                            <label for="pass" class="form-label fs-5">Password</label>
-                            <input type="password" name="pass" id="pass" class="form-control" required>
-                          </div>
-                          <div class="form-check col-6 mt-5">
-                            <label class="form-check-label text-black">
-                              <input type="checkbox" name="rememer" id="remember" value="check" class="form-check-input">
-                              Show Password
-                            </label>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-9">
-                            <label for="address" class="form-label fs-5">Address</label>
-                            <input type="search" name="address" id="address" class="form-control" placeholder="Street/Barangay/City/Province" required>
-                          </div>
-                          <div class="col">
-                            <label for="zipcode" class="form-label fs-5">Zipcode</label>
-                            <input type="text" name="zipcode" id="zipcode" class="form-control" placeholder="......" required>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-5">
-                            <label for="idtype" class="form-label fs-5">Select ID type</label>
-                            <input type="search" name="idtype" id="idtype" class="form-control" placeholder="(Identification)">
-                          </div>
-                        </div>
-                      </fieldset>
-                    </form>
-                  </div>
-                </div>
-
-                <!--footer-->
-                <div class="modal-footer">
-                  <div class="sub-modal">
-                    <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#submit">Submit</button>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-          <!--second modal-->
-          <div class="modal fade" id="submit">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <!--second modal header-->
-                <div class="modal-header">
-                  <h2>Review Inputed Infomation</h2>
-                  <div class="btn-close" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#register"></div>
-                </div>
-                <!--second modal body-->
-                <div class="modal-body">
-                  <div class="information">
-                    <h4>Fullname</h4>
-                    <p>this is the fullname</p>
-                    <h4>Email</h4>
-                    <p>this is the email</p>
-                    <h4>Password</h4>
-                    <p>this is the password</p>
-                    <h4>Phone</h4>
-                    <p>this is the phone</p>
-                    <h4>gender</h4>
-                    <p>this is the gender</p>
-                    <h4>address</h4>
-                    <p>this is the address</p>
-                    <h4>zipcode</h4>
-                    <p>this is the zipcode</p>
-                    <h4>Identification</h4>
-                    <p>this is the ID</p>
+          <!---->
+          <div class="row">
+            <div class="col">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" name="address" id="address" class="form-control" placeholder="Street/Barangay/City/Province" required>
+            </div>
+          </div>
+          <!---->
+          <div class="row">
+            <div class="col">
+              <label for="zipcode" class="form-label">Zipcode</label>
+              <input type="text" name="zipcode" id="zipcode" class="form-control" required>
+            </div>
+            <div class="col">
+              <label for="phone" class="form-label">Phone no.</label>
+              <input type="tel" name="phone" id="phone" class="form-control" required placeholder="(+63)">
+            </div>
+          </div>
+          <!---->
+          <br />
+          <!---->
+          <div class="row">
+            <div class="col">
+              <label for="id-type" class="form-label">Identification</label>
+              <select name="id-type" id="id-type" class="form-select" required>
+                <option value="">(Select I.D. Type)</option>
+                <option value="1">Drivers license</option>
+                <option value="2">Postal Identification</option>
+                <option value="3">National Identification</option>
+                <option value="4">Others</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="gender" class="fs-5 form-label">Gender</label>
+                  <div class="col form-check gender">
+                      <input type="radio" class="form-check-input" id="male" name="optradio" value="male">
+                      <label class="form-check-label" for="male">Male</label>
                   </div>
-                </div>
-                <!--second modal footer-->
-                <div class="modal-footer">
-                  <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#login-privacy">Done</button>
-                </div>
-              </div>
+                  <div class="col form-check gender">
+                      <input type="radio" class="form-check-input" id="female" name="optradio" value="female">
+                      <label class="form-check-label" for="female">Female</label>
+                  </div>
             </div>
           </div>
-          <!--modal login-terms-->
-          <div class="modal fade" id="login-privacy">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h3>Privacy</h3>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#submit"></button>
-                </div>
-                <div class="modal-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque officia reprehenderit eveniet facere animi tempora illum? Quaerat ut dolores maxime!</p>
-                  <hr>
-                  <h3>Terms & Conditions</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam ad illo a recusandae necessitatibus placeat quam maiores, doloremque vitae?</p>
-                  <hr>
-                  <h3>Users Agreement</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quae quas totam nobis distinctio repellat sit alias minus porro recusandae.</p>
-                </div>
-                <div class="modal-footer">
-                  <p>By clicking ok you agree to the "Terms & Conditions and Users Agreement" stated above</p>
-                  <button type="button" class="btn btn-success"><a href="index.html" style="text-decoration: none; color: white;">Okay</a></button>
-                </div>
-              </div>
-            </div>
-          </div>
-
+          <!---->
+          <br />
+          <h6 class="text-center">&copy;Balol's Car Rental 2023</h6>
+        </form>
+      </div>
+      <!---->
+      <!---->
+      <div class="modal-footer">      
+        <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#submit">Submit</button>
+      </div>
+      <!---->
+    </div>
+  </div>
+</div>
+<!---->
+<!--modal submit-->
+<div class="modal fade" id="submit">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!---->
+      <div class="modal-header">
+        <h2>Review Inputed Infomation</h2>
+        <div class="btn-close" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#register"></div>
+      </div>
+      <!---->
+      <div class="modal-body">
+        <div class="information">
+          <h4>Fullname</h4>
+          <p>this is the fullname</p>
+          <h4>Email</h4>
+          <p>this is the email</p>
+          <h4>Password</h4>
+          <p>this is the password</p>
+          <h4>Address</h4>
+          <p>this is the address</p>
+          <h4>Zipcode</h4>
+          <p>this is the zipcode</p>
+          <h4>Phone no.</h4>
+          <p>this is the phone no.</p>
+          <h4>Selected I.D</h4>
+          <p>this is the selected id</p>
+          <h4>Gender</h4>
+          <p>this is the gender</p>
         </div>
-
+      </div>
+      <!---->
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#login-privacy">Done</button>
       </div>
     </div>
   </div>
+</div>
+<!---->
+<!--modal privacy-->
+<div class="modal fade" id="login-privacy">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Balol's Car Rental</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#submit"></button>
+      </div>
+      <div class="modal-body">
+        <h3>Privacy Policy</h3>
+        <p>This Privacy Policy governs the manner in which Balol's Car Rental collects, uses, maintains, and discloses information collected from users (each, a "User") of the Balol's Car Rental website. This privacy policy applies to the Site and all products and services offered by Balol's Car Rental.</p>
+        <h5>Information Collection, Use, and Sharing</h5>
+        <p>We are the sole owners of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you. We will not sell or rent this information to anyone.</p>
+        <p>We will use your information to respond to you regarding the reason you contacted us. We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, e.g. to ship an order.</p>
+        <p>Unless you ask us not to, we may contact you via email in the future to tell you about specials, new products or services, or changes to this privacy policy.</p>
+        <h5>Your Access to and Control Over Information</h5>
+        <p>You may opt-out of any future contacts from us at any time. You can do the following at any time by contacting us via the email address or phone number given on our website:</p>
+        <p>See what data we have about you, if any.
+              Change/correct any data we have about you.
+              Have us delete any data we have about you.
+              Express any concern you have about our use of your data.
+              Security</p>
+        <p>We take precautions to protect your information. When you submit sensitive information via the website, your information is protected both online and offline.</p>
+        <hr>
+        <h3>Terms & Conditions</h3>
+        <h5>1. Agreement to Terms</h5>            
+              <p>By accessing or using our services, you agree to be bound by these Terms and Conditions.</p>             
+              <h5>2. Car Rental Conditions</h5>
+              <p>The user must meet the minimum age requirement for renting a car as per local laws.</p>
+              <p>The user is responsible for returning the car in the same condition it was rented in, barring normal wear and tear.</p>
+              <p>The user is liable for any damages incurred during the rental period and must adhere to the rental agreement.</p>
+              <h5>3. User Agreement</h5>
+              <p>Users are required to provide accurate personal information for the rental process.</p>
+              <p>Users must comply with all local traffic and parking laws during the rental period.</p>
+              <p>Users are responsible for the safety and security of the rented vehicle during the rental period.</p>
+              <h5>4. Limitation of Liability</h5>
+              <p>Balol's Car Rental shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly.</p>
+              <h5>5. Changes to Terms and Conditions</h5>
+              <p>Balol's Car Rental has the discretion to update these terms at any time. We encourage Users to frequently check this page for any changes to stay informed.</p>
+              <p>By using this Site, you signify your acceptance of this policy. If you do not agree</p>     
+      </div>
+      <div class="modal-footer">
+        <form action="" class="create-acount">
+          <div class="form-check">
+            <label class="form-check-label text-black">
+              <input type="checkbox" name="rememer" id="remember" value="check" class="form-check-input">
+              You agree to the ("Privacy Poclicy, Terms & Conditions and Users Agreement") stated above
+            </label>
+          </div>
+          <button type="submit" class="btn btn-success" data-bs-dismiss="modal" href="index.html">Okay</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

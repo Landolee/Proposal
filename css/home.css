@@ -1,15 +1,16 @@
-*body{
+*{
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .header{
-  background-color: rgb(223, 176, 48);
+  background-color: #df905b;
   margin-bottom: 30px;
 }
 .title-page h1{
   font-size: 100px;
   text-transform: uppercase;
   text-shadow: 2px 4px white;
+  margin-left: 10px;
 }
 .header .logo{
   margin-top: 10px;
