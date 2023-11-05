@@ -173,33 +173,3 @@ li:hover{
     font-size: 8px;
   }
 }
-@media only screen and (max-width: 375px){
-  .title-page a{
-    font-size: 25px;
-  }
-  .logo img{
-    width: 30px;
-    height: 30px;
-  }
-}
-@media only screen and (max-width: 320px){
-  .title-page a{
-    font-size: 20px;
-  }
-  .logo img{
-    width: 25px;
-    height: 25px;
-    margin-bottom: 5px;
-  }
-  .footer button{
-    width: fit-content;
-    height: fit-content;
-    font-size: 8px;
-  }
-  .footer h4{
-    font-size: 8px;
-  }
-  .footer b{
-    font-size: 6px;
-  }
-}
