@@ -3,202 +3,163 @@
     font-style: italic;
 }
 .header{
-    background-color: #df905b;
-    height: auto;
-}
-.title-page a{
-    font-size: 90px;
-    text-transform: uppercase;
-    text-shadow: 2px 4px white;
-    margin-left: 10px;
-    text-decoration: none;
-}
-.header .logo{
-    margin-top: 10px;
+  background-image: url(bin/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  background-attachment: fixed;
 }
 .logo img{
-    width: 120px;
-    height: 120px;
-    border: 5px solid lightblue;
-    border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #df905b;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 .logo img:hover{
-    border: 5px solid white;
+  border: 2px solid white;
 }
-.main{
-    padding: 5px;
+.navbar-nav{
+  font-size: 30px;
 }
-.main .row{
-    height: 100%;
-    width: 100%;
+li:hover{
+  background-color: white;
+  border-radius: 10px;
 }
-.model-photo{
-    background-color: #df905b;
-    height: 100%;
-    border-radius: 10px;
+.navbar ul li{
+  padding-right: 20px;
 }
-.model-photo img{
-    height: 100%;
-    width: 100%;
+#drop-choices li{
+  font-size: 20px;
 }
-.model-photo .book{
-    margin-top: 2px;
+.intro .card{
+  background-image: url(bin/background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.model-photo .intro{
-    margin-top: 2px;
+.car-model img{
+  height: 100%;
+  width: 100%;
 }
-#specifications{
-    background-size: 100%;
-    background-color: #df905b;
-    border-radius: 10px;
-    margin-left: 10px;
+.specifications .card{
+  border-radius: 10px;
 }
 table tr{
     font-size: 12px;
 }
 .footer{
-    height: 100%;
+  height: 100%;
+}
+.footer h1{
+  font-size: 20px;
+  text-transform: uppercase;
+  text-shadow: 1px 2px rgba(158, 118, 9, 0.466);
+}
+.footer h6{
+  font-size: 15px;
+}
+.footer a{
+  text-decoration: none;
+}
+.footer svg{
+  width: 30px;
+  height: 30px;
+}
+.footer button{
+  width: 150px;
+  font-size: 12px;
+}
+.footer button:hover{
+  background-color: white;
+  color: black;
+}
+.footer h4{
+  font-size: 20px;
+}
+.footer b{
+  font-size: 12px;
+}
+@media only screen and (max-width: 768px){
+  .header{
+    margin-bottom: 20px;
+  }
+  .logo img{
+    width: 80px;
+    height: 80px;
+  }
+  .navbar button{
+    height: 50px;
+    width: 50px;
+  }
+  .navbar ul{
+    font-size: 20px;
   }
   .footer h1{
-    font-size: 20px;
-    text-transform: uppercase;
-    text-shadow: 1px 2px rgba(158, 118, 9, 0.466);
-  }
-  .footer h6{
     font-size: 15px;
   }
-  .footer a{
-    text-decoration: none;
+  .footer h6{
+    font-size: 12px;
   }
   .footer svg{
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
   }
   .footer button{
-    width: 150px;
-    font-size: 12px;
+    width: 100px;
+    height: 50px;
+    font-size: 10px;
   }
   .footer button:hover{
     background-color: white;
     color: black;
   }
   .footer h4{
-    font-size: 20px;
+    font-size: 15px;
   }
   .footer b{
     font-size: 12px;
   }
-  @media only screen and (max-width: 768px){
-    .title-page a{
-        font-size: 50px;
-        text-shadow: 1px 2px white;
-        margin-left: 50px;
-    }
-    .header .logo{
-        margin-top: 10px;
-    }
-    .logo img{
-        width: 55px;
-        height: 55px;
-        border: 3px solid lightblue;
-    }
-    .intro{
-        width: 100%;
-    }
-    .model-photo{
-        height: 100%;
-        width: 200px;
-        border-radius: 10px;
-    }
-    .model-photo img{
-        height: 200px;
-        width: 100%;
-    }
-    .footer h1{
-        font-size: 15px;
-      }
-      .footer h6{
-        font-size: 12px;
-      }
-      .footer svg{
-        width: 15px;
-        height: 15px;
-      }
-      .footer button{
-        width: 100px;
-        height: 50px;
-        font-size: 10px;
-      }
-      .footer button:hover{
-        background-color: white;
-        color: black;
-      }
-      .footer h4{
-        font-size: 15px;
-      }
-      .footer b{
-        font-size: 12px;
-      }
 }
 @media only screen and (max-width: 425px){
-    .title-page a{
-      font-size: 30px;
-      text-shadow: 1px 2px white;
-      margin-left: 20px;
-    }
-    .header .logo{
-      margin-top: 5px;
-    }
-    .logo img{
-      width: 35px;
-      height: 35px;
-    }
-    .main-first-container .cards-container img{
-      width: 100%;
-      height: 100px;
-    }
-    .main-second-container .cards-container img{
-      width: 100%;
-      height: 100px;
-    }
-    .footer button{
-      height: 30px;
-      font-size: 8px;
-    }
-    .footer h4{
-      font-size: 12px;
-    }
-    .footer b{
-      font-size: 8px;
-    }
+  .logo img{
+    width: 80px;
+    height: 80px;
   }
-  @media only screen and (max-width: 375px){
-    .title-page a{
-      font-size: 25px;
-    }
-    .logo img{
-      width: 30px;
-      height: 30px;
-    }
+  .navbar button{
+    height: 30px;
+    width: 30px;
   }
-  @media only screen and (max-width: 320px){
-    .title-page a{
-      font-size: 20px;
-    }
-    .logo img{
-      width: 25px;
-      height: 25px;
-      margin-bottom: 5px;
-    }
-    .footer button{
-      width: fit-content;
-      height: fit-content;
-      font-size: 8px;
-    }
-    .footer h4{
-      font-size: 8px;
-    }
-    .footer b{
-      font-size: 6px;
-    }
+  .navbar ul{
+    font-size: 15px;
   }
+  #drop-choices li{
+    font-size: 12px;
+  }
+  .footer h1{
+    font-size: 10px;
+  }
+  .footer h6{
+    font-size: 8px;
+  }
+  .footer svg{
+    width: 15px;
+    height: 15px;
+  }
+  .footer button{
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 8px;
+  }
+  .footer button:hover{
+    background-color: white;
+    color: black;
+  }
+  .footer h4{
+    font-size: 10px;
+  }
+  .footer b{
+    font-size: 6px;
+  }
+}

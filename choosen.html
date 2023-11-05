@@ -11,229 +11,268 @@
     <link rel="icon" type="image/x-icon" href="bin/logo.jpg">
 </head>
 <body>
-    <!--header-->
-    <div class="container-{breakpoint} header mb-3 sticky-top">
-      <div class="row">
-        <div class="col-10 title-page">
-          <a href="home.html">Balol's car rental</a>
-        </div> 
-        <div class="col logo">
-          <a href="home.html"><img src="bin/logo.jpg" alt="this is a photo"></a>
-        </div>
-      </div>           
+<!--header-->
+<div class="container-fluid header sticky-top">
+  <!--navbar-->
+  <div class="row p-2">
+    <div class="col-sm">
+      <div class="navbar navbar-expand-lg navbar-light">
+          <a href="home.html" class="logo"><img src="bin/logo.jpg" alt="this is a photo"></a>
+          <button class="navbar-toggler navbar-toggler-icon" type="button" 
+            data-bs-toggle="collapse" data-bs-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="true" aria-label="Toggle navigation">            
+          </button>
+          <div class="collapse navbar-collapse mt-5" id="navbarDropdown">
+            <b>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="" data-bs-toggle="modal" data-bs-target="#booking">My Bookings</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="DropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Settings
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="DropdownMenu" id="drop-choices">
+                  <li><a class="dropdown-item" href="developer.html">Profile</a></li>
+                  <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                  <li><a class="dropdown-item" href="developer.html">Developer</a></li>
+                </ul>
+              </li>
+            </ul>
+            </b>
+          </div>
+      </div>
     </div>
-    <hr>
-    <!--main-->
-    <div class="container main mb-3">     
-      <div class="row mb-2">
-        <div class="col intro">
-          <div class="card">
-              <div class="card-header">
-                  <h4>Toyota Vios White</h4>
-              </div>
-              <div class="card-body">
-                <article>
-                  <p>The Toyota Vios is a bestseller, yes, but it's not exactly the type of car you would think to bring up to Baguio on a long road trip. But that's exactly what Toyota Motor Philippines (TMP) decided to do on the latest leg of its media drive series. Our first stop after Manila was in Pampanga for lunch, before we drove on north to La Union.</p>
-                </article>
-              </div>
+  </div>
+  <!--end navbar-->
+</div>
+<!--end header-->
+<!--main-->
+<div class="container-fluid main">
+  <!--first row-->  
+  <div class="row">
+    <div class="col-sm intro mb-2">
+      <div class="card">
+          <div class="card-header">
+            <h4>Toyota Vios White</h4>
+          </div>
+          <div class="card-body">
+            <p>The Toyota Vios is a bestseller, yes, but it's not exactly the type of car you would think to bring up to Baguio on a long road trip. But that's exactly what Toyota Motor Philippines (TMP) decided to do on the latest leg of its media drive series. Our first stop after Manila was in Pampanga for lunch, before we drove on north to La Union.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!--end first row-->
+  <!--second row-->
+  <div class="row">
+    <!--booked car-->
+    <div class="col-sm car-model mt-1">
+      <div class="card">
+        <div class="card-body">
+          <img src="bin/vios-white.png" alt="this is a photo">
+        </div>
+        <div class="card-footer">
+          <button type="button" class="my-1 btn btn-secondary bi-book" data-bs-toggle="modal" data-bs-target="#book"></button>
+        </div>
+      </div>                    
+    </div>            
+    <!--end booked car-->
+    <!--modal-book-->
+      <div class="modal fade" id="book">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h3>Booking</h3>
+                <button type="button" class="btn btn-close btn-danger" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Fullname: </h5>
+              <p>Rodnie Dumaghan</p>
+              <h5>Email: </h5>
+              <p><a href="https://www.gmail.com/">landolee1233@gmail.com</a></p>
+              <h5>Address</h5>
+              <p>Poblacion, Pitogo Zamboanga del Sur</p>
+              <h5>Zipcode</h5>
+              <p>7033</p>
+              <h5>Phone Number</h5>
+              <p>09664169464</p>
+              <p>09517981903</p>
+              <h5>Booked Car:</h5>
+              <p>Toyota Vios White</p>
+              <h5>Presented I.D: </h5>
+              <p>Driver's License</p>
+              <form action="" class="form-control">
+                <label for="booking-date" class="form-label">Estimated date and time of booking</label>
+                <br />
+                <input type="datetime-local" name="booking-date" id="booking-date">
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#booked">Book</button>
+            </div>
           </div>
         </div>
       </div>
-      <!---->
-        <div class="row container-fluid">
-            <div class="col model-photo p-3">
-                <img src="bin/vios-white.png" alt="this is a photo">   
-                <div class="row">
-                    <div class="col-2 book">
-                        <button type="button" class="my-1 btn btn-secondary bi-book" data-bs-toggle="modal" data-bs-target="#book"></button>
-                    </div>               
-                </div>            
+      <!--end of modal booking-->
+
+      <!--modal booked-->
+      <div class="modal fade" id="booked">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Thank you for choosing Balols Car Rental for your vehicle needs!</h3>
+              <button type="submit" class="btn btn-close btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#book"></button>
             </div>
-            <!--modal-book-->
-              <div class="modal fade" id="book">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h3>Booking</h3>
-                      <button type="button" class="btn btn-close btn-danger" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                      <h5>Fullname: </h5>
-                      <p>Rodnie Dumaghan</p>
-                      <h5>Email: </h5>
-                      <p><a href="https://www.gmail.com/">landolee1233@gmail.com</a></p>
-                      <h5>Address</h5>
-                      <p>Poblacion, Pitogo Zamboanga del Sur</p>
-                      <h5>Zipcode</h5>
-                      <p>7033</p>
-                      <h5>Phone Number</h5>
-                      <p>09664169464</p>
-                      <p>09517981903</p>
-                      <h5>Booked Car:</h5>
-                      <p>Toyota Vios White</p>
-                      <h5>Presented I.D: </h5>
-                      <p>Driver's License</p>
-                      <form action="" class="form-control">
-                        <label for="booking-date" class="form-label">Estimated date and time of booking</label>
-                        <br />
-                        <input type="datetime-local" name="booking-date" id="booking-date">
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#booked">Book</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <!--end of modal booking-->
-            <!--modal booked-->
-            <div class="modal fade" id="booked">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3>Thank you for choosing Balols Car Rental for your vehicle needs!</h3>
-                    <button type="submit" class="btn btn-close btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#book"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Your booking has been confirmed, and we're excited to provide you with a seamless and enjoyable rental experience. Our team is dedicated to ensuring that your journey is smooth and comfortable. Rest assured, your selected vehicle will be ready for pick-up at your designated time. Should you have any further queries or require assistance, feel free to contact us. We appreciate your trust in our services and look forward to serving you. Safe travels!</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#payment">Payment Method</button>
-                  </div>
-                </div>
-              </div>
+            <div class="modal-body">
+              <p>Your booking has been confirmed, and we're excited to provide you with a seamless and enjoyable rental experience. Our team is dedicated to ensuring that your journey is smooth and comfortable. Rest assured, your selected vehicle will be ready for pick-up at your designated time. Should you have any further queries or require assistance, feel free to contact us. We appreciate your trust in our services and look forward to serving you. Safe travels!</p>
             </div>
-            <!--end of modal booked-->
-            <!--modal payment-->
-            <div class="modal fade" id="payment">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3>Payment Method</h3>
-                    <button type="submit" class="btn btn-close btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#booked"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>At Balols Car Rental, we strive to make your rental experience as convenient as possible. To ensure a hassle-free process, we offer a variety of flexible payment methods for your convenience. From credit and debit cards to digital wallets and even cash transactions, we cater to diverse preferences, making it easy for you to settle your rental fees securely. Our goal is to provide a seamless and accommodating payment experience, allowing you to focus on enjoying your journey with one less worry on your mind.</p>
-                    <div class="row">
-                      <div class="col">
-                        <img src="bin/visa.png" alt="this is a photo" height="50px" width="140px">                       
-                      </div>
-                      <div class="col">
-                        <img src="bin/security.png" alt="this is a photo" height="50px" width="120px">
-                      </div>
-                      <div class="col">
-                        <img src="bin/gcash.png" alt="this is a photo" height="50px" width="120px">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <p>if ever you want to cancel your "booking pls go to "My Booking" at the home page (Note: canceling a booking will cause you fare charges!)</p>
-                    <a href="home.html" class="btn btn-success">Okay</a>
-                  </div>
-                </div>
-              </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#payment">Payment Method</button>
             </div>
-            <!--end of modal payment-->
-            <div class="col-4" id="specifications">
-                <h1 class="text-center">Specifications</h1>
-                <table class="table text-black">
-                    <thead>
-                      <tr>Dimension and Weight</tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Overall Dimensions (mm)</td>
-                        <td>4,425 x 1,730 x 1,475</td>
-                      </tr>
-                      <tr>
-                        <td>Wheelbase (mm)</td>
-                        <td>2,550</td>
-                      </tr>
-                      <tr>
-                        <td>Seating Capacity</td>
-                        <td>5</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table class="table text-black">
-                    <thead>
-                      <tr>Engine</tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Engine Type</td>
-                        <td>Dual VVT-I, 4-Cylinder In-Line<br/>DOHC 16V EFI</td>
-                      </tr>
-                      <tr>
-                        <td>Engine Displacement (cc)</td>
-                        <td>1,496</td>
-                      </tr>
-                      <tr>
-                        <td>Maximum Output (ps/rpm)</td>
-                        <td>107PS/6,000rpm</td>
-                      </tr>
-                      <tr>
-                        <td>Maximum Torque (Nm/Rpm)</td>
-                        <td>140Nm/4,200rpm</td>
-                      </tr>
-                      <tr>
-                        <td>Fuel Type</td>
-                        <td>-----</td>
-                      </tr>
-                      <tr>
-                        <td>Fuel Capacity (L)</td>
-                        <td>42</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table class="table text-black">
-                    <thead>
-                      <tr>Transmission</tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Transmission</td>
-                        <td>CVT</td>
-                      </tr>
-                      <tr>
-                        <td>Power Transmission</td>
-                        <td>CVT</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table class="table text-black">
-                    <thead>
-                      <tr>Chassis</tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Front Brake/ Rear Brake</td>
-                        <td>Ventilated Discs / Solid Disc</td>
-                      </tr>
-                      <tr>
-                        <td>Tires</td>
-                        <td>195/50 R16 Alloy</td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
+          </div>
         </div>
-        <!---->
+      </div>
+      <!--end of modal booked-->
+
+      <!--modal payment-->
+      <div class="modal fade" id="payment">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Payment Method</h3>
+              <button type="submit" class="btn btn-close btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#booked"></button>
+            </div>
+              <div class="modal-body">
+              <p>At Balols Car Rental, we strive to make your rental experience as convenient as possible. To ensure a hassle-free process, we offer a variety of flexible payment methods for your convenience. From credit and debit cards to digital wallets and even cash transactions, we cater to diverse preferences, making it easy for you to settle your rental fees securely. Our goal is to provide a seamless and accommodating payment experience, allowing you to focus on enjoying your journey with one less worry on your mind.</p>
+              <div class="row">
+                <div class="col">
+                  <img src="bin/visa.png" alt="this is a photo" height="50px" width="140px">                       
+                </div>
+                <div class="col">
+                  <img src="bin/security.png" alt="this is a photo" height="50px" width="120px">
+                </div>
+                <div class="col">
+                  <img src="bin/gcash.png" alt="this is a photo" height="50px" width="120px">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <p>if ever you want to cancel your "booking pls go to "My Booking" at the home page (Note: canceling a booking will cause you fare charges!)</p>
+              <a href="home.html" class="btn btn-success">Okay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end of modal payment-->
+    <!--specifications-->
+    <div class="col-sm specifications mt-1">
+      <div class="card">
+        <div class="card-header">
+          <h1 class="text-center">Specifications</h1>
+        </div>
+        <div class="card-body">
+          <table class="table text-black">
+            <thead>
+              <tr>Dimension and Weight</tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Overall Dimensions (mm)</td>
+                <td>4,425 x 1,730 x 1,475</td>
+              </tr>
+              <tr>
+                <td>Wheelbase (mm)</td>
+                <td>2,550</td>
+              </tr>
+              <tr>
+                <td>Seating Capacity</td>
+                <td>5</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table text-black">
+            <thead>
+              <tr>Engine</tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Engine Type</td>
+                <td>Dual VVT-I, 4-Cylinder In-Line<br/>DOHC 16V EFI</td>
+              </tr>
+              <tr>
+                <td>Engine Displacement (cc)</td>
+                <td>1,496</td>
+              </tr>
+              <tr>
+                <td>Maximum Output (ps/rpm)</td>
+                <td>107PS/6,000rpm</td>
+              </tr>
+              <tr>
+                <td>Maximum Torque (Nm/Rpm)</td>
+                <td>140Nm/4,200rpm</td>
+              </tr>
+              <tr>
+                <td>Fuel Type</td>
+                <td>-----</td>
+              </tr>
+              <tr>
+                <td>Fuel Capacity (L)</td>
+                <td>42</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table text-black">
+            <thead>
+              <tr>Transmission</tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Transmission</td>
+                <td>CVT</td>
+              </tr>
+              <tr>
+                <td>Power Transmission</td>
+                <td>CVT</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table text-black">
+            <thead>
+              <tr>Chassis</tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Front Brake/ Rear Brake</td>
+                <td>Ventilated Discs / Solid Disc</td>
+              </tr>
+              <tr>
+                <td>Tires</td>
+                <td>195/50 R16 Alloy</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-    <hr>
-    <!--footer-->
-  <div class="container-{breakpoint} footer">
-    <!--row-->
+    <!--end specifications-->   
+  </div>
+  <!--end row-->
+</div>
+<!--end main-->
+<hr>
+<!--footer-->
+<div class="container-fluid footer">
     <div class="row">
-      <!---->
+      <!--footer title page-->
       <div class="col-sm-3 text-center">
         <h1>Balol's Car Rental</h1>
         <h6>&copy;Balol's Car Rental 2023</h6>
       </div>
-      <!---->
-      <!---->
-      <div class="col-sm-2">
-        <center>
+      <!--end footer title page-->
+      <!--footer icon-->
+      <div class="col-sm-3 text-center">
         <a href="https://www.facebook.com/Roeljr.galban">
           <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook m-2" viewBox="0 0 16 16">
           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -249,33 +288,32 @@
             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
           </svg>
         </a>
-      </center>
       </div>
-      <!---->
+      <!--end footer icon-->
       <!--nested-->
-      <div class="col-sm-7">
-        <div class="row">
-          <div class="col">
-            <button type="button" class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#privacy">Privacy Policy</button>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#terms">Terms & Conditions</button>
-          </div>
-          <div class="col">
-            <h4>Contact us:</h4>
-            <div class="row">
-              <div class="col"><b>+639664169464</b></div>
-              <div class="col"><b>+639517981903</b></div>
-            </div>
+    <div class="col-sm">
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#privacy">Privacy Policy</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#terms">Terms & Conditions</button>
+        </div>
+        <div class="col">
+          <h4>Contact us:</h4>
+          <div class="row">
+            <div class="col"><b>+639664169464</b></div>
+            <div class="col"><b>+639517981903</b></div>
           </div>
         </div>
       </div>
-      <!--nested end-->
+    </div>
+    <!--nested end-->
     </div>
     <!--end row-->
-  </div>
-  <!--end footer-->
-  <!--modals-->
+</div>
+<!--end footer-->
+<!--modals-->
     <!--modal privacy-->
     <div class="modal fade" id="privacy">
       <div class="modal-dialog">
@@ -337,5 +375,48 @@
       </div>
     </div>
     <!---->
+    <!--modal booking-->
+    <div class="modal fade" id="booking">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>My Bookings</h1>
+            <button type="button" class="btn btn-close btn-danger" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Toyota Vios Red</h5>
+            <p>Booked last:(date & time)</p>
+            <button type="button" class="btn btn-danger" onclick="cancel()" data-bs-dismiss="modal">cancel this booking</button>
+            <script>
+              function cancel(){
+                confirm("Note: canceling a booking will cause you fare charges!, click ok to continue");
+              }
+            </script>
+            <hr>
+            <h5>Toyota Vios White</h5>
+            <p>Booked last:(date & time)</p>
+            <button type="button" class="btn btn-danger" onclick="cancel()" data-bs-dismiss="modal">cancel this booking</button>
+            <script>
+              function cancel(){
+                confirm("Note: canceling a booking will cause you fare charges!, click ok to continue");
+              }
+            </script>
+            <hr>
+            <h5>Toyota Vios Black</h5>
+            <p>Booked last:(date & time)</p>
+            <button type="button" class="btn btn-danger" onclick="cancel()" data-bs-dismiss="modal">cancel this booking</button>
+            <script>
+              function cancel(){
+                confirm("Note: canceling a booking will cause you fare charges!, click ok to continue");
+              }
+            </script>
+          </div>
+          <div class="modal-footer">
+            <p>&COPY;Balol's Car Rental 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end modal booking-->
 </body>
 </html>
