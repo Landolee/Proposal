@@ -32,11 +32,16 @@ li:hover{
 #drop-choices li{
   font-size: 20px;
 }
-.intro .card{
-  background-image: url(bin/background.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+.intro{
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 10px;
+}
+.intro h1{
+  font-size: 30px;
+  color: #df905b;
+  text-transform: uppercase;
+  text-shadow: 1px 1px black;
 }
 .car-model img{
   height: 100%;

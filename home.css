@@ -32,10 +32,6 @@ li:hover{
 #drop-choices li{
   font-size: 20px;
 }
-.main{
-  height: 100%;
-  width: 100%;
-}
 .map h3{
   font-size: 30px;
   color: #df905b;
@@ -51,9 +47,7 @@ li:hover{
   font-size: 15px;
 }
 .about{
-  background-image: url(bin/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: whitesmoke;
   border-radius: 5px;
   padding: 10px;
 }
@@ -68,9 +62,22 @@ li:hover{
   font-size: 20px;
   text-indent: 1rem;
 }
+.feature-model h1{
+  font-size: 30px;
+  color: #df905b;
+  text-transform: uppercase;
+  text-shadow: 1px 1px black;
+  text-align: center;
+}
 .feature-model{
   width: 100%;
   height: 100%;
+}
+.feature-model h1{
+  font-size: 30px;
+  color: #df905b;
+  text-transform: uppercase;
+  text-shadow: 1px 1px black;
 }
 .feature-model video{
   width: 100%;
@@ -143,24 +150,28 @@ li:hover{
     font-size: 20px;
   }
   .map h3{
-    font-size: 15px;
+    font-size: medium;
     text-shadow: none;
   }
   .map p{
-    font-size: 12px;
+    font-size: xx-small;
   }
   .about h1{
-    font-size: 15px;
+    font-size: larger;
     text-shadow: none;
   }
   .about p{
-    font-size: 12px;
+    font-size: small;
+  }
+  .feature-model h1{
+    font-size: larger;
+    text-shadow: none;
   }
   .feature-model img{
     height: 250px;
   }
   .features h1{
-    font-size: 15px;
+    font-size: larger;
     text-shadow: none;
   }
   .card-body h3{
@@ -168,9 +179,6 @@ li:hover{
   }
   .card-body p{
     font-size: 10px;
-  }
-  .features .card-footer{
-    display: none;
   }
   .footer h1{
     font-size: 15px;
@@ -213,32 +221,8 @@ li:hover{
   #drop-choices li{
     font-size: 12px;
   }
-  .map h3{
-    font-size: 10px;
-    text-shadow: none;
-  }
-  .map p{
-    font-size: 6px;
-  }
-  .about h1{
-    font-size: 10px;
-    text-shadow: none;
-  }
-  .about p{
-    font-size: 6px;
-  }
   .feature-model img{
     height: 150px;
-  }
-  .features h1{
-    font-size: 10px;
-    text-shadow: none;
-  }
-  .card-body h3{
-    font-size: 8px;
-  }
-  .card-body p{
-    font-size: 6px;
   }
   .footer h1{
     font-size: 10px;
