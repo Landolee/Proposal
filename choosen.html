@@ -17,7 +17,7 @@
   <div class="row p-2">
     <div class="col-sm">
       <div class="navbar navbar-expand-lg navbar-light">
-          <a href="home.html" class="logo"><img src="bin/logo.jpg" alt="this is a photo"></a>
+          <a href="home.html" class="logo navbar-brand"><img src="bin/logo.jpg" alt="this is a photo"></a>
           <button class="navbar-toggler navbar-toggler-icon" type="button" 
             data-bs-toggle="collapse" data-bs-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="true" aria-label="Toggle navigation">            
           </button>
@@ -38,7 +38,7 @@
                       Settings
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="DropdownMenu" id="drop-choices">
-                  <li><a class="dropdown-item" href="developer.html">Profile</a></li>
+                  <li><a class="dropdown-item" href="profile.html">Profile</a></li>
                   <li><a class="dropdown-item" href="index.html">Logout</a></li>
                   <li><a class="dropdown-item" href="developer.html">Developer</a></li>
                 </ul>
@@ -185,10 +185,17 @@
                   </div>
                 </div>
               </div>
+              <p>or you can pay directly in our office!</p>
             </div>
             <div class="modal-footer">
               <p>if ever you want to cancel your "booking pls go to "My Booking". (Note: canceling a booking will cause you fare charges!)</p>
-              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#booked">Back</button>
+              <button type="submit" class="btn btn-success" onclick="direct()" data-bs-dismiss="modal">Pay Directly</button>
+              <script>
+                function direct(){
+                  confirm('Thank you for choosing Balols Car Rental, We will make sure that you will encounter quality experience and satisfaction')
+                }
+              </script>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#booked">Back</button> 
             </div>
           </div>
         </div>
